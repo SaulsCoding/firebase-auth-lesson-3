@@ -12,6 +12,9 @@ adminForm.addEventListener('sumbit', (e) => {
 // listen for auth status changes
 auth.onAuthStateChanged(user => {
    if (user) {
+    //  user.getIdTokenResult().then(idTokenResult => {
+    //    console.log(idTokenResult.claims.admin)
+    //  })
     db.collection('guides').onSnapshot(snapshot => {
       setupGuides(snapshot.docs);
       setupUI(user);
