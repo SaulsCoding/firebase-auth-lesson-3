@@ -1,4 +1,4 @@
-// add admin cloud function
+// add admin cloud function //
 const adminForm = document.querySelector('.admin-actions');
 adminForm.addEventListener('sumbit', (e) => {
   e.preventDefault();
