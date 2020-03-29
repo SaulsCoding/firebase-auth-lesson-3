@@ -14,5 +14,6 @@ exports.addAdminRole = functions.https.onCall((data, context) => {
         }
     }).catch(err => {
         return err;
-    })
-})
+    });
+});
+
